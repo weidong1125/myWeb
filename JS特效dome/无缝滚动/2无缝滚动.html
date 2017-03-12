@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无缝滚动</title>
+<style>
+#div1{
+	border:3px solid #090;
+	position:relative;
+	margin:50px auto;
+	height:100px;
+	width:942px;}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	position:absolute;
+	width:942px;}
+li{
+	width:147px;
+	float:left;
+	margin-right:10px;}
+</style>
+<script>
+window.onload=function(){
+	var div1=document.getElementById("div1");
+	var ul=document.getElementsByTagName("ul")[0];
+	setInterval(function(){
+		ul.style.left=ul.offsetLeft+5+"px";
+		},30);
+	}
+</script>
+</head>
+
+<body>
+	<div id="div1">
+    <ul>
+	<li><img src="images/jjx1.jpg"></li>
+    <li><img src="images/jjx2.jpg"></li>
+    <li><img src="images/jjx3.jpg"></li>
+    <li><img src="images/jjx4.jpg"></li>
+    <li><img src="images/jjx5.jpg"></li>
+    <li><img src="images/jjx6.jpg"></li>
+	</div>
+</body>
+</html>

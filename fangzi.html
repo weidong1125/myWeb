@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	body{
+		background:black;}
+	#c1{
+		background:white;}
+	span{
+		color:white;}
+</style>
+<script type="text/javascript">
+	window.onload=function(){
+		var fz=document.getElementById("c1");
+		var oc=fz.getContext("2d");	
+		oc.beginPath();//三角
+		oc.moveTo(100,100);
+		oc.lineTo(200,10);
+		oc.lineTo(300,100);
+		
+		oc.moveTo(250,100);//烟囱
+		oc.lineTo(250,20);
+		oc.lineTo(280,20);
+		oc.lineTo(280,100);
+		
+		oc.fillStyle="#ff0";
+		oc.closePath();
+		oc.fill();
+		
+		oc.beginPath();
+		oc.moveTo(100,100);
+		oc.lineTo(100,250);
+		oc.lineTo(300,250);
+		oc.lineTo(300,100);
+		oc.fillStyle="#82420b";
+		oc.closePath();
+		oc.fill();
+		
+		oc.beginPath();
+		oc.moveTo(130,130);
+		oc.lineTo(130,180);
+		oc.lineTo(180,180);
+		oc.lineTo(180,130);
+		oc.fillStyle="#fff";
+		oc.closePath();
+		oc.fill();
+		
+		oc.beginPath();
+		oc.moveTo(230,250);
+		oc.lineTo(230,160);
+		oc.lineTo(280,160);
+		oc.lineTo(280,250);
+		oc.fillStyle="#0ff";
+		oc.closePath();
+		oc.fill();
+	};
+</script>
+</head>
+
+<body>
+<canvas id="c1" width="400" height="400">
+	<span>不支持canvas的浏览器</span>
+</canvas>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无缝滚动2</title>
+	<style>
+    #div1{
+		position:relative;
+		margin:50px auto;
+		width:942px;
+		height:100px;
+		overflow:hidden;}
+	ul{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+		position:absolute;}
+	li{
+		width:147px;
+		float:left;
+		margin-right:10px;}
+    </style>
+    <script type="text/javascript" src="../addevent.js"></script>
+    <script type="text/javascript">
+    	addEvent(window,"load",function(){
+			var div1=document.getElementById("div1");
+			var ul=document.getElementsByTagName("ul")[0];
+			var lis=document.getElementsByTagName("li");
+			ul.innerHTML+=ul.innerHTML;
+			ul.style.width=(lis[0].offsetWidth+10)*lis.length+"px";
+			ul.style.left=-ul.offsetWidth/2+"px";
+			var timer=null;
+			timer=setInterval(function(){
+				if(ul.offsetLeft>0){
+					ul.style.left=-ul.offsetWidth/2+"px";
+					}
+				ul.style.left=ul.offsetLeft+5+"px";
+				},30);
+			div1.onmouseover=function(){
+				clearInterval(timer);
+				};
+			div1.onmouseout=function(){
+				timer=setInterval(function(){
+				if(ul.offsetLeft>0){
+					ul.style.left=-ul.offsetWidth/2+"px";
+					}
+				ul.style.left=ul.offsetLeft+5+"px";
+				},30);
+				};
+		
+		});
+    </script>
+</head>
+<body>
+	<div id="div1">
+		<ul>
+			<li><img src="images/jjx1.jpg" alt=""></li>
+			<li><img src="images/jjx2.jpg" alt=""></li>
+			<li><img src="images/jjx3.jpg" alt=""></li>
+			<li><img src="images/jjx4.jpg" alt=""></li>
+			<li><img src="images/jjx5.jpg" alt=""></li>
+			<li><img src="images/jjx6.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

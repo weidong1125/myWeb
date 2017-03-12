@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>到顶部</title>
+		<style>
+			#div1{
+				width: 1190px;
+				margin: 0 auto;
+			}
+			#top{
+				width: 60px;
+				height: 60px;
+				position: fixed;
+				_position:absolute;
+				display: none;
+				right: 0px;
+				bottom: 0px;
+			}
+		</style>
+		<script type="text/javascript" src="addevent.js"></script>
+		<script type="text/javascript">
+			addEvent(window,"scroll",function(){
+				var top=document.getElementById("top");
+				if(-[1,]){
+					var y=window.pageYOffset;
+				}else{
+					var y=document.documentElement.scrollTop;
+				}
+				//判断滚动条的位置
+				if(y>=360){
+					top.style.display="block";
+				}else{
+					top.style.display="none";
+				}
+				//绑定事件
+				addEvent(top,"click",function(){
+					window.scrollTo(0,0);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1"><img src="ding/2.jpg"></div>
+		<div id="top"><img src="ding/1.png" width="60px"></div>
+	</body>
+</html>

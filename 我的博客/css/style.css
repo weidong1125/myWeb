@@ -1,0 +1,44 @@
+﻿body,ul,h3,h4{margin:0;padding:0;list-style:none;}
+body{background:#000;font:14px "微软雅黑";}
+#container{width:760px;left:50%;margin-left:-380px;
+	position:relative;border:1px dashed #aaa;
+	border-top:0;background:#fff;}
+#banner img{vertical-align:top;}
+#navigation{width:760px;height:25px;background:#daeeff;}
+#navigation ul{margin-left:310px;list-style:none;}
+#navigation li{width:75px;float:left;
+	padding-top:1px;text-align:center;}
+#navigation li a{font-size:14px;font-weight:bold;
+	text-decoration:none;display:block;padding-top:3px;padding-bottom: 2px;}
+#navigation li a:hover{background:#905;color:#fff;}
+#left{width:220px;float:left;}
+#left .author{text-align:center;
+	background:url(../img/mypic_bg.gif) repeat-y;margin-top:0;}
+.author p.mypic img{padding:2px;border:1px solid #909;}
+.author p.word{font:12px bold "微软雅黑";padding:3px 0px;
+border-top:1px dashed #999;border-bottom:1px dashed #999;}
+#left h4{background:url(../img/leftbg.jpg) no-repeat;
+	padding-left:15px;font-weight:bold;}
+.links ul{margin:5px 15px;}
+.links li{float:left;padding:2px 0 0 10px;width: 80px;}
+.links li a{text-decoration:none;padding-left:5px;}
+.links li a:hover{color:#0072ff;
+	text-decoration:underline;}
+.category{clear:both}.category li,.latest li,.lcomment li,.friend li{
+	background:url(../img/icon1.gif) no-repeat 8px 7px;
+	margin:5px 18px;margin-right:5px;border-bottom:1px dashed #999;}
+.category li a,.latest li a,.lcomment li a,.friend li a{text-decoration:none;
+	padding-left:20px;}
+.category li a:hover,.latest li a:hover,.lcomment li a:hover,.friend li a:hover{
+	color:#0072ff;text-decoration:underline;}
+
+#main{float:left;width:510px;margin-left:10px;
+	font:14px/1.2em "微软雅黑";}
+#main h3{font-size:15px;border-bottom:1px dotted #999;
+		margin-top:10px;}
+#main h3 a{text-decoration:none;color:#662900;}
+#main h3 a:hover{color:#0072ff;}
+#main p.author{text-align:right;color:#888;margin:0;}
+#main p.content,#main p.show{padding-left:5px;}
+#footer{clear:both;text-align:center;color:#004a87;
+	background:#daeeff;font:14px/1em "微软雅黑";}

@@ -1,0 +1,124 @@
+#container{
+	min-width:320px;
+	min-height:480px;
+	margin:0px auto;}
+header{
+	margin:10px 4px;
+	margin-bottom:5px;
+	overflow:hidden;}
+img{
+	vertical-align:top;}
+header div.logo{
+	float:left;}
+header div.openDoor{
+	float:right;
+	font-size:16px;
+	font-weight:bold;
+	color:#664735;	
+	}
+section.banner img{
+	width:100%;
+	height:auto;
+}
+nav{
+	overflow:hidden;
+	background:url(../img/navbg.png) repeat-x bottom left;}
+nav li{
+	float:left;
+	width:25%;
+	text-align:center;
+	padding-bottom:5px;}
+a{
+	font-size:16px;	
+	color:#fff;
+	text-decoration:none;}
+section.content{
+	width:100%;
+	height: 365px;}
+.left{
+	float:left; 
+	width:175px;
+	background:#fff;}
+.left li{
+	border: 2px solid #fff;
+	}
+.right{
+	float:right;
+	width:135px;
+	color:#fff;
+	border:2px solid #fff;}
+.right .one{
+	text-align:center;
+	background:#fff;}
+.right .two{
+	height:202px;
+	border-top: 3px solid #fff;
+	background-image:linear-gradient(to bottom,#fed940,#ffa312);}	
+.right .zs{
+	padding:10px 10px;
+	margin-bottom:-20px;}
+.right .more{
+	position:relative;
+	left:70px;
+	top:-7px;}
+.right p{
+	padding:5px 10px;
+	padding-right:5px;
+	padding-bottom:0px;}
+/* *************list*********** */
+.list{
+	overflow: hidden;
+	width:94%;
+	margin: 2% auto;
+	margin-bottom: 15%;
+	padding:1%;
+	border:1px solid #eee;
+	border-radius: 5px;
+	background:rgba(255, 255, 255, 0.5)!important; filter:Alpha(opacity=50);
+}
+.list p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #42ab2b;
+	margin:0px;
+	margin-bottom: 5px;
+}
+.list ul{
+	margin-left: 3%;
+}
+.list li{
+	float: left;
+	margin: 5px 2%;
+}
+.list li div{
+	font-size:14px;
+	color: #056c00;
+	text-align: center;
+	background:#c5b79d;
+}
+footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:51px;
+	background:url(../img/nav.jpg) repeat-x bottom left;}
+footer ul{
+	width: 100%;
+}	
+footer li{
+	float:left;
+	width:25%;
+	text-align:center;
+	padding-top:5px;
+	background:url(../img/line.jpg) right top no-repeat;}
+footer li:hover{
+	background:url(../img/nav.jpg) repeat-x;}
+footer li a{
+	font-size:12px;
+	overflow: hidden;}
+	
+	
+	
+	
+	

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>易淘网</title>
+	<style type="text/css">
+		div.container{
+			width: 1200px;
+			margin:0px auto;
+			background: #ff0;
+			color: #fff;
+		}
+		div.banner{
+			background: #090;
+			height: 60px;
+		}
+		div.links{
+			background: #009;
+			height: 60px;
+		}
+		div.search{
+			background: #909;
+			height: 60px;
+		}
+		/* 响应式布局默认样式 */
+		div.left{
+			width: 200px;
+			background: #999;
+			height: 200px;
+			float: left;
+		}
+		div.content{
+			width: 800px;
+			background: #900;
+			height: 500px;
+			float: left;
+		}
+		div.right{
+			width: 200px;
+			background: #f0c;
+			height: 300px;
+			float: left;
+		}
+		div.footer{
+			clear: both;
+			background: #004;
+		}
+	/* 媒体查询 */
+		/* 1000-1200 */
+		@media screen and (min-width: 1000px) and (max-width: 1200px) {
+			div.container{
+				width: 1000px;
+			}
+			div.left{
+				display: none;
+			}
+		}
+		/* 800-1000 */
+		@media screen and (min-width: 800px) and (max-width:1000px) {
+			div.container{
+				width: 800px;
+			}
+			div.left{
+				display: none;
+			}
+			div.right{
+				display: none;
+			}
+		}
+		/* 小于800 */
+		@media screen and (max-width: 800px) {
+			div.container{
+				max-width: 800px;
+			}
+			div.left{
+				display: none;
+			}
+			div.content{
+				width: 100%;
+			}
+			div.right{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="banner">banner</div>
+		<div class="links">links</div>
+		<div class="search">搜索</div>
+		<div class="left">左边恻栏</div>
+		<div class="content">中间主要内容</div>
+		<div class="right">右边恻栏</div>
+		<div class="footer">版权</div>
+	</div>
+</body>
+</html>
